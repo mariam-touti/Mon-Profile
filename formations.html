@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariam Touti | Profile</title>
+
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!-- font awesom -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <!-- style link -->
+    <link rel="stylesheet" href="style/master.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Mon Profil</a>  
+            <!-- Mobile toggle button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Desktop menu (visible on lg screens and up) -->
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Accueil</a> 
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="about.html">À propos</a> 
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="services.html">Services</a>  
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="experiences.html">Experiences</a>  
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="formations.html">Formations</a>  
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="skills.html">Compétences</a> 
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link contact" href="contact.html">Me contacter</a>  
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Offcanvas Menu (for mobile) -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Mon Profil</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link active mobile-nav-link" aria-current="page" href="index.html">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mobile-nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mobile-nav-link" href="about.html">À propos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mobile-nav-link" href="skills.html">Compétences</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mobile-nav-link" href="formations.html">Formations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mobile-nav-link" href="experiences.html">Expériences</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mobile-nav-link" href="contact.html">Me contacter</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- start formations -->
+    <div class="formations py-5 pb-5" id="formations">
+        <div class="main-heading">
+            <h2 class="text-center">Mes Formations</h2>
+            <p class="text-center">Consultante commerciale expérimentée, je optimise vos ventes par mon écoute active et stratégies sur-mesure.</p>
+        </div>
+        <div class="container-fluid mt-5">
+            <div class="row justify-content-center g-5" style="max-width: 1200px; margin: auto;">
+                <!-- formation 1 -->
+                <div class="col-md-6 col-lg-5">
+                    <div class="education-card card border-0 shadow-lg overflow-hidden h-100">
+                        <div class="card-body position-relative pt-4">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="university-badge bg-primary bg-opacity-10 p-3 rounded-circle me-3">
+                                    <i class="fas fa-university text-primary fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="card-subtitle mb-1 text-muted">Université Internationale d'Agadir</h5>
+                                    <p class="text-primary mb-0 fw-semibold">
+                                        <i class="fas fa-calendar-alt me-2"></i>Juin 2022
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="education-image overflow-hidden rounded-3 mb-3">
+                                <img src="images/master.jpg" class="img-fluid hover-zoom" alt="Diplôme de Master">
+                                <div class="image-overlay"></div>
+                            </div>
+                            <div class="card-header position-relative bg-white pt-4 pb-3 border-0">
+                                <h3 class="text-dark">Master Commerce Internationale</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- formation 2 -->
+                <div class="col-md-6 col-lg-5">
+                    <div class="education-card card border-0 shadow-lg overflow-hidden h-100">
+                        <div class="card-body position-relative pt-4">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="university-badge bg-primary bg-opacity-10 p-3 rounded-circle me-3">
+                                    <i class="fas fa-university text-primary fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="card-subtitle mb-1 text-muted">FSJES IBNO ZOHR, Agadir</h5>
+                                    <p class="text-primary mb-0 fw-semibold">
+                                        <i class="fas fa-calendar-alt me-2"></i>Juin 2018
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="education-image overflow-hidden rounded-3 mb-3">
+                                <img src="images/gestion-economique.jpg" class="img-fluid hover-zoom" alt="Diplôme de Master">
+                                <div class="image-overlay"></div>
+                            </div>
+                            <div class="card-header position-relative bg-white pt-4 pb-3 border-0">
+                                <h3 class="text-dark">Licence professionnelle en gestion économique</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- formation 3 -->
+                <div class="col-md-6 col-lg-5">
+                    <div class="education-card card border-0 shadow-lg overflow-hidden h-100">
+                        <div class="card-body position-relative pt-4">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="university-badge bg-primary bg-opacity-10 p-3 rounded-circle me-3">
+                                    <i class="fas fa-university text-primary fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="card-subtitle mb-1 text-muted">FSJES IBNO ZOHR, Agadir</h5>
+                                    <p class="text-primary mb-0 fw-semibold">
+                                        <i class="fas fa-calendar-alt me-2"></i>Juin 2017
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="education-image overflow-hidden rounded-3 mb-3">
+                                <img src="images/commerce-international.jpg" class="img-fluid hover-zoom" alt="Diplôme de Master">
+                                <div class="image-overlay"></div>
+                            </div>
+                            <div class="card-header position-relative bg-white pt-4 pb-3 border-0">
+                                <h3 class="text-dark">DEUG en économie et gestion</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- formation 4 -->
+                <div class="col-md-6 col-lg-5">
+                    <div class="education-card card border-0 shadow-lg overflow-hidden h-100">
+                        <div class="card-body position-relative pt-4">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="university-badge bg-primary bg-opacity-10 p-3 rounded-circle me-3">
+                                    <i class="fas fa-university text-primary fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="card-subtitle mb-1 text-muted">Lycée TECHNIQUE ALIDRISSI Agadir</h5>
+                                    <p class="text-primary mb-0 fw-semibold">
+                                        <i class="fas fa-calendar-alt me-2"></i>Juin 2015
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="education-image overflow-hidden rounded-3 mb-3">
+                                <img src="images/Baccalauréat.jpg" class="img-fluid hover-zoom" alt="Diplôme de Master">
+                                <div class="image-overlay"></div>
+                            </div>
+                            <div class="card-header position-relative bg-white pt-4 pb-3 border-0">
+                                <h3 class="text-dark">Baccalauréat en sciences économiques</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+    <!-- end formations -->
+
+    <!-- bootstrao js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <!-- script link -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariam Touti | Profile</title>
+
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!-- font awesom -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <!-- style link -->
+    <link rel="stylesheet" href="style/master.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Mon Profil</a>  
+            <!-- Mobile toggle button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Desktop menu (visible on lg screens and up) -->
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Accueil</a> 
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#about">À propos</a> 
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#services">Services</a>  
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#experiences">Experiences</a>  
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#formations">Formations</a>  
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#skills">Compétences</a> 
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link contact" href="#contact">Me contacter</a>  
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Offcanvas Menu (for mobile) -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Mon Profil</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link active mobile-nav-link" aria-current="page" href="index.html">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mobile-nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mobile-nav-link" href="#about">À propos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mobile-nav-link" href="#skills">Compétences</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mobile-nav-link" href="#formations">Formations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mobile-nav-link" href="#experiences">Expériences</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mobile-nav-link" href="#contact">Me contacter</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- hero section -->
+    <div class="hero py-5 pb-5">
+        <div class="container-fluid">
+            <div class="row justify-content-center align-items-center g-5 mt-5">
+                <div class="col-12 col-md-10 col-lg-5 mx-auto mx-lg-0">
+                    <div class="hero-image-container">
+                        <div class="hero-image text-center position-relative">
+                            <div class="image-shape"></div>
+                            <img src="images/woman-1.png" alt="Portrait" style="width: 300px;" class="img-fluid rounded position-relative">
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-infos col-md-6 col-lg-5 text-lg-start text-center">
+                    <small class="text-white-50">Bonjeur, Je suis</small>
+                    <h1 class="mt-2 fw-bold fs-1">Mariam Touti</h1>
+                    <p class="text-white-50">
+                        Commercial Polyvalent Relationnel
+                    </p>
+                    <p class="description mt-4">
+                        je allie force de vente, sens relationnel et adaptabilité pour développer votre chiffre d'affaires avec dynamisme.
+                    </p>
+                    <div class="links">
+                        <a href="https://www.linkedin.com/in/mariam-touti-5b5507150/" class="social-btn btn linkedin rounded-circle" aria-label="Visiter mon profil LinkedIn"target="_blank"><i class="fa-brands fa-linkedin-in fs-3"></i></a>
+                        <a href="mailto:toutimeryem@gmail.com" class="social-btn btn email rounded-circle" aria-label="M'envoyer un email"><i class="fas fa-envelope fs-3"></i></a>
+                        <a href="tel:+212634688517" class="social-btn btn phone rounded-circle" aria-label="M'appeler"><i class="fas fa-phone fs-3"></i></a>
+                    </div>
+                    <div class="buttons mt-3">
+                        <a href="#contact" class="btn rounded-pill contact">Me contacter</a> 
+                        <a href="images/mariamToutiCv.pdf" class="btn btn-outline-light rounded-pill ms-3" download>Accéder à mon CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end hero section -->
+
+    <!-- start about -->
+    <div class="about py-5 pb-5" id="about">
+        <div class="main-heading">
+            <h2 class="text-center">À Propos de Moi</h2>
+            <p class="text-center">Consultante commerciale expérimentée, je optimise vos ventes par mon écoute active et stratégies sur-mesure.</p>
+        </div>
+        <div class="row mt-5 justify-content-center align-items-center g-4">
+            <div class="col-md-6 col-lg-5 text-lg-start text-center">
+                <img src="images/woman-2.png" class="img-fluis rounded-circle" alt="">
+            </div>
+            <div class="col-md-6 col-lg-5 text-lg-start text-center">
+                <p class="about-text">
+                    Professionnelle, dynamique et dotée d’un excellent sens du relationnel, je privilège l’instauration de
+                    relations de confiance et de respect. Grâce à mon parcours académique et mon expérience dans
+                    le secteur de commerce, j’ai développé une grande capacité à travailler en équipe, à m’adapter
+                    aux exigences du terrain et à réagir avec efficacité aux imprévus
+                </p>
+                <hr class="text-danger w-50">
+                <b class="text-dark-50 mt-3 description-text">
+                    <i class="fa-solid fa-graduation-cap fs-1 description-icon"></i>
+                    Rigoureux et proactif, je suis
+                    animée par une volonté constante d’apprentissage et d’amélioration, prête à relever de nouveaux
+                    défis pour contribuer activement à l’excellence et à la sécurité des processus de commerce.
+                </b>
+            </div>
+        </div>
+    </div>
+    <!-- end about -->
+
+    <!-- start experience -->
+    <div class="experience py-5" id="experiences">
+        <div class="container">
+            <div class="main-heading mb-5">
+                <h2 class="text-center display-5 fw-bold mb-3 animate__animated animate__fadeInDown">Mes Expérience</h2>
+                <p class="text-center lead text-muted animate__animated animate__fadeIn animate__delay-1s">
+                    Découvrez mon parcours pluridisciplinaire à travers différents secteurs d'activité
+                </p>
+            </div>
+
+            <div class="row justify-content-center g-4 mt-4">
+                <!-- Experience Item 1 -->
+                <div class="col-md-6 col-lg-4 animate__animated animate__fadeInUp">
+                    <div class="card experience-card h-100 border-0 shadow-sm overflow-hidden">
+                        <div class="card-header bg-opacity-10 py-3 border-0">
+                            <div class="d-flex align-items-center">
+                                <div class="bg-danger bg-opacity-25 p-3 rounded-circle me-3">
+                                    <i class="fa-solid fa-person-chalkboard"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0 fw-bold">Formatrice</h5>
+                                    <p class="mb-0 text-muted small">2023 - Présent</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="text-danger mb-3">Chez Ofppt</h6>
+                            <ul class="experience-list">
+                                <li>Évaluation pédagogique</li>
+                                <li>Technologies de l’éducation</li>
+                                <li>Développement de programmes d’études</li>
+                                <li>Définir et promouvoir l’offre, et réaliser des actions de prospection</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Experience Item 2-->
+                <div class="col-md-6 col-lg-4 animate__animated animate__fadeInUp">
+                    <div class="card experience-card h-100 border-0 shadow-sm overflow-hidden">
+                        <div class="card-header bg-opacity-10 py-3 border-0">
+                            <div class="d-flex align-items-center">
+                                <div class="bg-danger bg-opacity-25 p-3 rounded-circle me-3">
+                                    <i class="fa-solid fa-person-dress"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0 fw-bold">Membre du conseil</h5>
+                                    <p class="mb-0 text-muted small">Février2023 - Octobre2023</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="text-danger mb-3">YCI | LTD</h6>
+                            <ul class="experience-list">
+                                <li>Négociation de contrat</li>
+                                <li>Négociation des avantages</li>
+                                <li>Expérience en gouvernance</li>
+                                <li>Connaissance du droit de l’immigration</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Experience Item 3-->
+                <div class="col-md-6 col-lg-4 animate__animated animate__fadeInUp">
+                    <div class="card experience-card h-100 border-0 shadow-sm overflow-hidden">
+                        <div class="card-header bg-opacity-10 py-3 border-0">
+                            <div class="d-flex align-items-center">
+                                <div class="bg-danger bg-opacity-25 p-3 rounded-circle me-3">
+                                    <i class="fas fa-cash-register"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0 fw-bold">Caissière</h5>
+                                    <p class="mb-0 text-muted small"> Mai2020 – Janvier2023</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="text-danger mb-3">BMCI / BNP / Paribas</h6>
+                            <ul class="experience-list">
+                                <li>Gestion des paiements</li>
+                                <li>Sens du service à la clientèle</li>
+                                <li>Ouverture et fermeture de caisse</li>
+                                <li>Respect des procédures de sécurité</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Experience Item 4-->
+                <div class="col-md-6 col-lg-4 animate__animated animate__fadeInUp">
+                    <div class="card experience-card h-100 border-0 shadow-sm overflow-hidden">
+                        <div class="card-header bg-success bg-opacity-25 py-3 border-0">
+                            <div class="d-flex align-items-center">
+                                <div class="bg-success bg-opacity-25 p-3 rounded-circle me-3">
+                                    <i class="fas fa-cash-register"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0 fw-bold">Superviseur Qualité</h5>
+                                    <p class="mb-0 text-muted small"> Mai 2017 – Octobre 2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="text-success mb-3">Concentrix</h6>
+                            <ul class="experience-list">
+                                <li>Maîtrise des normes qualité</li>
+                                <li>Analyse des non-conformités</li>
+                                <li>Suivi des indicateurs de performance (KPI)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Experience Item 5-->
+                <div class="col-md-6 col-lg-4 animate__animated animate__fadeInUp">
+                    <div class="card experience-card h-100 border-0 shadow-sm overflow-hidden">
+                        <div class="card-header bg-success bg-opacity-25 py-3 border-0">
+                            <div class="d-flex align-items-center">
+                                <div class="bg-success bg-opacity-25 p-3 rounded-circle me-3">
+                                    <i class="fas fa-cash-register"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0 fw-bold">Comptable</h5>
+                                    <p class="mb-0 text-muted small"> Septembre 2014 – Février 2016</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="text-success mb-3">LABOTEST MA</h6>
+                            <ul class="experience-list">
+                                <li>Comptabilité analytique</li>
+                                <li>Déclarations fiscales et sociales</li>
+                                <li>Maîtrise de la comptabilité générale</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Centered Button -->
+            <div class="col-12 d-flex justify-content-center mt-5">
+                <div class="main-link text-center">
+                    <a href="experiences.html" class="text-decoration-none rounded-pill">Autres Expériences</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end experince -->
+
+    <!-- start services -->
+    <div class="services pt-5 pb-5" id="services">
+        <div class="main-heading mb-5">
+            <h2 class="text-center display-5 fw-bold mb-3 animate__animated animate__fadeInDown">Mes services</h2>
+            <p class="text-center lead text-light animate__animated animate__fadeIn animate__delay-1s">
+                Découvrez mes services professionnels en Entrepreneuriat et Commerce.
+            </p>
+        </div>
+        <div class="container overflow-hidden pt-5">
+            <div class="row gy-5">
+                <!-- Service 1: Enseignement en Entrepreneuriat -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="service text-center px-xl-2">
+                        <i class="fas fa-lightbulb fa-3x mb-4 rounded-pill"></i>
+                        <h5 class="m-2">Enseignement en Entrepreneuriat</h5>
+                        <p class="m-0">Je propose des formations pour aider les futurs entrepreneurs à développer des projets innovants et durables.</p>
+                    </div>
+                </div>
+                <!-- Service 2: Coaching en Gestion de Projets -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="service text-center px-xl-2">
+                        <i class="fas fa-briefcase fa-3x mb-4 rounded-pill"></i>
+                        <h5 class="m-2">Coaching en Gestion de Projets</h5>
+                        <p class="m-0">J'accompagne les entrepreneurs dans la planification et la gestion efficace de leurs projets.</p>
+                    </div>
+                </div>
+                <!-- Service 4: Formation en Communication -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="service text-center px-xl-2">
+                        <i class="fas fa-comments fa-3x mb-4 rounded-pill"></i>
+                        <h5 class="m-2">Formation en Communication</h5>
+                        <p class="m-0">Je forme les professionnels à maîtriser les techniques de communication efficaces pour réussir dans leurs projets.</p>
+                    </div>
+                </div>
+                <!-- Service 5: Conseil en Stratégie d'Affaires -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="service text-center px-xl-2">
+                        <i class="fas fa-chart-line fa-3x mb-4 rounded-pill"></i>
+                        <h5 class="m-2">Conseil en Stratégie d'Affaires</h5>
+                        <p class="m-0">Je propose des conseils stratégiques pour aider les entreprises à atteindre leurs objectifs commerciaux.</p>
+                    </div>
+                </div>
+                <!-- Service 6: Ateliers de Créativité -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="service text-center px-xl-2">
+                        <i class="fas fa-palette fa-3x mb-4 rounded-pill"></i>
+                        <h5 class="m-2">Ateliers de Créativité</h5>
+                        <p class="m-0">J'anime des ateliers pour stimuler la créativité et l'innovation chez les entrepreneurs et les équipes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end services -->
+
+    <!-- start formations -->
+    <div class="formations py-5 pb-5" id="formations">
+        <div class="main-heading">
+            <h2 class="text-center">Mes Formations</h2>
+            <p class="text-center">Consultante commerciale expérimentée, je optimise vos ventes par mon écoute active et stratégies sur-mesure.</p>
+        </div>
+        <div class="container-fluid mt-5">
+            <div class="row justify-content-center g-5" style="max-width: 1200px; margin: auto;">
+                <!-- formation 1 -->
+                <div class="col-md-6 col-lg-5">
+                    <div class="education-card card border-0 shadow-lg overflow-hidden h-100">
+                        <div class="card-body position-relative pt-4">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="university-badge bg-primary bg-opacity-10 p-3 rounded-circle me-3">
+                                    <i class="fas fa-university text-primary fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="card-subtitle mb-1 text-muted">Université Internationale d'Agadir</h5>
+                                    <p class="text-primary mb-0 fw-semibold">
+                                        <i class="fas fa-calendar-alt me-2"></i>Juin 2022
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="education-image overflow-hidden rounded-3 mb-3">
+                                <img src="images/master.jpg" class="img-fluid hover-zoom" alt="Diplôme de Master">
+                                <div class="image-overlay"></div>
+                            </div>
+                            <div class="card-header position-relative bg-white pt-4 pb-3 border-0">
+                                <h3 class="text-dark">Master Commerce Internationale</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- formation 2 -->
+                <div class="col-md-6 col-lg-5">
+                    <div class="education-card card border-0 shadow-lg overflow-hidden h-100">
+                        <div class="card-body position-relative pt-4">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="university-badge bg-primary bg-opacity-10 p-3 rounded-circle me-3">
+                                    <i class="fas fa-university text-primary fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="card-subtitle mb-1 text-muted">FSJES IBNO ZOHR, Agadir</h5>
+                                    <p class="text-primary mb-0 fw-semibold">
+                                        <i class="fas fa-calendar-alt me-2"></i>Juin 2018
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="education-image overflow-hidden rounded-3 mb-3">
+                                <img src="images/gestion-economique.jpg" class="img-fluid hover-zoom" alt="Diplôme de Master">
+                                <div class="image-overlay"></div>
+                            </div>
+                            <div class="card-header position-relative bg-white pt-4 pb-3 border-0">
+                                <h3 class="text-dark">Licence professionnelle en gestion économique</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- formation 3 -->
+                <div class="col-md-6 col-lg-5">
+                    <div class="education-card card border-0 shadow-lg overflow-hidden h-100">
+                        <div class="card-body position-relative pt-4">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="university-badge bg-primary bg-opacity-10 p-3 rounded-circle me-3">
+                                    <i class="fas fa-university text-primary fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="card-subtitle mb-1 text-muted">FSJES IBNO ZOHR, Agadir</h5>
+                                    <p class="text-primary mb-0 fw-semibold">
+                                        <i class="fas fa-calendar-alt me-2"></i>Juin 2017
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="education-image overflow-hidden rounded-3 mb-3">
+                                <img src="images/commerce-international.jpg" class="img-fluid hover-zoom" alt="Diplôme de Master">
+                                <div class="image-overlay"></div>
+                            </div>
+                            <div class="card-header position-relative bg-white pt-4 pb-3 border-0">
+                                <h3 class="text-dark">DEUG en économie et gestion</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- formation 4 -->
+                <div class="col-md-6 col-lg-5">
+                    <div class="education-card card border-0 shadow-lg overflow-hidden h-100">
+                        <div class="card-body position-relative pt-4">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="university-badge bg-primary bg-opacity-10 p-3 rounded-circle me-3">
+                                    <i class="fas fa-university text-primary fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="card-subtitle mb-1 text-muted">Lycée TECHNIQUE ALIDRISSI Agadir</h5>
+                                    <p class="text-primary mb-0 fw-semibold">
+                                        <i class="fas fa-calendar-alt me-2"></i>Juin 2015
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="education-image overflow-hidden rounded-3 mb-3">
+                                <img src="images/Baccalauréat.jpg" class="img-fluid hover-zoom" alt="Diplôme de Master">
+                                <div class="image-overlay"></div>
+                            </div>
+                            <div class="card-header position-relative bg-white pt-4 pb-3 border-0">
+                                <h3 class="text-dark">Baccalauréat en sciences économiques</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+    <!-- end formations -->
+
+    <!-- start competences -->
+    <div class="competences py-5 pb-5" id="skills">
+        <div class="main-heading">
+            <h2 class="text-center">Mes Compétences</h2>
+            <p class="text-center text-secondary">Je suis une professionnelle polyvalente, capable de m'adapter à divers environnements de travail.</p>
+        </div>
+        <div class="container-fluid">
+            <div class="row mt-4 justify-content-center align-items-center g-3">
+                <!-- competence 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="competence border border-secondary rounded-4 p-4">
+                        <i class="fa-solid fa-lightbulb fs-1"></i>
+                        <h4 class="mt-3">Supervision de la production</h4>
+                        <hr class="text-info w-25 mb-3">
+                        <p>Encadrement des équipes, suivi des performances,amélioration des processus</p>
+                    </div>
+                </div>
+                <!-- competence 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="competence border border-secondary rounded-4 p-4">
+                        <i class="fa-solid fa-gears fs-1"></i>
+                        <h4 class="mt-3">Gestion de la documentation</h4>
+                        <hr class="text-info w-25 mb-3">
+                        <p>Dossier HACCP, manuel qualité, procédures, réglementation,traçabilité</p>
+                    </div>
+                </div>
+                <!-- competence 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="competence border border-secondary rounded-4 p-4">
+                        <i class="fa-solid fa-magnifying-glass-chart fs-1"></i>
+                        <h4 class="mt-3">Esprit critique et d’analyse</h4>
+                        <hr class="text-info w-25 mb-3">
+                        <p>Savoir diagnostiquer les problèmes et proposer des solutionsefficaces.</p>
+                    </div>
+                </div>
+                <!-- competence 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="competence border border-secondary rounded-4 p-4">
+                        <i class="fa-solid fa-sync-alt fs-1"></i>
+                        <h4 class="mt-3">Gestion et optimisation des ressources</h4>
+                        <hr class="text-info w-25 mb-3">
+                        <p>Réduction des coûts, optimisation des matièrespremières et des processus</p>
+                    </div>
+                </div>
+                <!-- competence 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="competence border border-secondary rounded-4 p-4">
+                        <i class="fa-solid fa-stopwatch fs-1"></i>
+                        <h4 class="mt-3">Réactivitéet gestion des imprévus</h4>
+                        <hr class="text-info w-25 mb-3">
+                        <p>Identification et traitementrapide des non-conformitéset des urgences</p>
+                    </div>
+                </div>
+                <!-- competence 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="competence border border-secondary rounded-4 p-4">
+                        <i class="fa-solid fa-globe fs-1"></i>
+                        <h4 class="mt-3">Langues</h4>
+                        <hr class="text-info w-25 mb-3">
+                        <ul class="list-unstyled text-light">
+                            <li><Strong>Arab</Strong> <span class="text-info">→</span> Langue maternelle</li>
+                            <li><Strong>French</Strong> <span class="text-info">→</span> Couran</li>
+                            <li><Strong>Anglais</Strong> <span class="text-info">→</span> Bilingue</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end competences -->
+
+    <!-- start contact -->
+    <div class="contact pt-5 pb-5" id="contact">
+        <div class="container">
+            <div class="row mt-5 justify-content-center">
+                <div class="col-md-6 col-lg-5">
+                    <div class="contact-img d-flex justify-content-center mb-5">
+                        <img src="images/contact.jpg" class="img-fluid circular-image" alt="">
+                    </div>
+                </div>
+                <div class="contact-text col-md-6 col-ld-7">
+                    <h2 class="text-center">
+                        <i class="fa-solid fa-phone"></i>
+                        Contacter Moi
+                    </h2>
+                    <hr class="mx-auto w-25">
+                    <p class="text-lg-start text-md-center text-sm-center">N'hésitez pas à me contacter pour toute question ou demande de renseignements.</p>
+                    <div class="links mx-auto d-flex justify-content-center">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a href="https://www.linkedin.com/in/mariam-touti-5b5507150/" class="btn linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="mailto:toutimeryem@gmail.com" class="social-btn btn email rounded-circle bg-danger text-light" aria-label="M'envoyer un email"><i class="fas fa-envelope fs-3"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="tel:+212634688517" class="social-btn btn phone rounded-circle bg-success text-light" aria-label="M'appeler"><i class="fas fa-phone fs-3"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end contact -->
+
+    <!-- start footer -->
+    <div class="footer pt-5 pb-5 text-white-50 text-center text-md-start">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <h3 class="mb-4 mt-3">Mariam Touti</h3>
+                    <p class="text-white-50">je allie force de vente, sens relationnel et adaptabilité pour développer votre chiffre d'affaires avec dynamisme.</p>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <h3 class="mb-4 mt-3">Accès directs</h3>
+                    <ul class="list-unstyled contact-links">
+                        <li class="mb-3">
+                            <a href="index.html" class="text-decoration-none">Accueil</i></a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#about" class="text-decoration-none">A Propos</i></a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#services" class="text-decoration-none">Mes Services</i></a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#skills" class="text-decoration-none">Mes Competence</i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-4 contact-infos">
+                    <h3 class="mb-4 mt-3">Me contacter</h3>
+                    <p class="text-light">
+                        <i class="fa-solid fa-house me-2"></i>
+                        HayEl Houda Bloc E N° 32,Agadir
+                    </p>
+                    <p class="text-light">
+                        <i class="fa-solid fa-envelope  me-2"></i>
+                        toutimeryem@gmail.com
+                    </p>
+                    <p class="text-light">
+                        <i class="fa-solid fa-phone-volume  me-2"></i>
+                        +212634 68 85 17
+                    </p>
+                </div>
+            </div>
+            <hr class=" mb-3">
+            <div class="d-flex justify-content-center align-items-center">
+                Tous droits réservés © 2025
+            </div>
+        </div>
+    </div>
+    <!-- end footer -->
+
+    <!-- bootstrao js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <!-- script link -->
+    <script src="script.js"></script>
+</body>
+</html>

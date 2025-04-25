@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariam Touti | Profile</title>
+
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!-- font awesom -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <!-- style link -->
+    <link rel="stylesheet" href="style/master.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Mon Profil</a>  
+            <!-- Mobile toggle button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Desktop menu (visible on lg screens and up) -->
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Accueil</a> 
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="about.html">À propos</a> 
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="services.html">Services</a>  
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="experiences.html">Experiences</a>  
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="formations.html">Formations</a>  
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="skills.html">Compétences</a> 
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link contact" href="contact.html">Me contacter</a>  
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Offcanvas Menu (for mobile) -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Mon Profil</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link active mobile-nav-link" aria-current="page" href="index.html">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mobile-nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mobile-nav-link" href="about.html">À propos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mobile-nav-link" href="skills.html">Compétences</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mobile-nav-link" href="formations.html">Formations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mobile-nav-link" href="experiences.html">Expériences</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mobile-nav-link" href="contact.html">Me contacter</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- start about -->
+    <div class="about py-5 pb-5" id="about">
+        <div class="main-heading">
+            <h2 class="text-center">À Propos de Moi</h2>
+            <p class="text-center">Consultante commerciale expérimentée, je optimise vos ventes par mon écoute active et stratégies sur-mesure.</p>
+        </div>
+        <div class="row mt-5 justify-content-center align-items-center g-4">
+            <div class="col-md-6 col-lg-5 text-lg-start text-center">
+                <img src="images/teacher.png" class="img-fluis rounded-circle" alt="">
+            </div>
+            <div class="col-md-6 col-lg-5 text-lg-start text-center">
+                <p class="about-text">
+                    Professionnelle, dynamique et dotée d’un excellent sens du relationnel, je privilège l’instauration de
+                    relations de confiance et de respect. Grâce à mon parcours académique et mon expérience dans
+                    le secteur de commerce, j’ai développé une grande capacité à travailler en équipe, à m’adapter
+                    aux exigences du terrain et à réagir avec efficacité aux imprévus
+                </p>
+                <hr class="text-danger w-50">
+                <b class="text-dark-50 mt-3 description-text">
+                    <i class="fa-solid fa-graduation-cap fs-1 description-icon"></i>
+                    Rigoureux et proactif, je suis
+                    animée par une volonté constante d’apprentissage et d’amélioration, prête à relever de nouveaux
+                    défis pour contribuer activement à l’excellence et à la sécurité des processus de commerce.
+                </b>
+            </div>
+        </div>
+    </div>
+    <!-- end about -->
+
+    <!-- bootstrao js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <!-- script link -->
+    <script src="script.js"></script>
+</body>
+</html>
